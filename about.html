@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>About — comparellms</title>
+  <meta name="description" content="Learn about comparellms, your daily source for LLM comparisons and AI model benchmarks.">
+  <meta name="author" content="Lucky">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — comparellms">
+  <meta property="og:description" content="Learn about comparellms, your daily source for LLM comparisons and AI model benchmarks.">
+  <meta property="og:url" content="https://comparellms.in/about.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://comparellms.in/about.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="./index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">compare<strong>llms</strong></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog/index.html">Blog</a></li>
+        <li><a href="./about.html" class="active">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article class="page-content">
+      <div class="container">
+        <header class="page-header">
+          <h1>About comparellms</h1>
+          <p class="page-subtitle">Your trusted source for AI model comparisons</p>
+        </header>
+
+        <section class="content">
+          <h2>Our Mission</h2>
+          <p>comparellms is dedicated to providing daily, unbiased comparisons of Large Language Models (LLMs) and AI systems. In a rapidly evolving AI landscape, we believe everyone deserves access to clear, accurate information about the capabilities and limitations of different AI models.</p>
+
+          <h2>What We Do</h2>
+          <p>Every day, we publish detailed comparisons that help developers, researchers, and enthusiasts make informed decisions about which AI models best suit their needs. Our comparisons cover:</p>
+          <ul>
+            <li><strong>Performance Benchmarks</strong> — Real-world tests across coding, reasoning, creativity, and more</li>
+            <li><strong>Feature Comparisons</strong> — Side-by-side analysis of capabilities, context windows, and APIs</li>
+            <li><strong>Use Case Analysis</strong> — Which models excel at specific tasks</li>
+            <li><strong>Cost Analysis</strong> — Pricing comparisons for different use cases</li>
+          </ul>
+
+          <h2>Our Approach</h2>
+          <p>We use a combination of AI assistance and human editorial review to create our content. Every comparison is fact-checked and reviewed before publication. For full transparency about our content creation process, please see our <a href="./ai-content-policy.html">AI Content Use Policy</a>.</p>
+
+          <h2>The Team</h2>
+          <p>comparellms is run by Lucky, an AI enthusiast passionate about making AI technology accessible and understandable for everyone.</p>
+
+          <h2>Stay Updated</h2>
+          <p>Subscribe to our <a href="./rss.xml">RSS feed</a> to get the latest comparisons delivered to your reader, or follow us on social media for updates.</p>
+
+          <h2>Get in Touch</h2>
+          <p>Have questions, suggestions, or want to collaborate? <a href="./contact.html">Contact us</a> — we'd love to hear from you!</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section footer-brand">
+          <a href="./index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            <span class="logo-text">compare<strong>llms</strong></span>
+          </a>
+          <p>Your trusted source for daily LLM comparisons, benchmarks, and AI model insights.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog/index.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="./rss.xml">RSS Feed</a></li>
+            <li><a href="./sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="./ai-content-policy.html">AI Content Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 comparellms.in. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./ai-content-policy.html">Privacy</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    navToggle?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      this.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop?.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.page-header, .info-card, .about-grid');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    
+    revealElements.forEach(el => {
+      el.classList.add('reveal');
+      revealObserver.observe(el);
+    });
+  </script>
+</body>
+</html>

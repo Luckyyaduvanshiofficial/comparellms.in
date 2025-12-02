@@ -1,0 +1,56 @@
+name: Build Index and Sitemap
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Run generator script
+        run: |
+          python3 scripts/generate_index_and_sitemap.py
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet posts-index*.json sitemap.xml rss.xml || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true' && github.event_name == 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add posts-index*.json sitemap.xml rss.xml
+          git commit -m 'chore: regenerate posts index, sitemap, and RSS feed'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Upload artifacts (for PRs)
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-files
+          path: |
+            posts-index*.json
+            sitemap.xml
+            rss.xml

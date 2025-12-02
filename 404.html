@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Page Not Found — comparellms</title>
+  <meta name="description" content="The page you're looking for doesn't exist.">
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="./index.html" class="logo">
+        <div class="logo-icon">⚡</div>
+        <span class="logo-text">compare<strong>llms</strong></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog/index.html">Blog</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="container">
+        <div class="error-content">
+          <h1 class="error-code">404</h1>
+          <h2>Page Not Found</h2>
+          <p>Oops! The page you're looking for seems to have wandered off into the AI void. Perhaps it was hallucinated? 🤖</p>
+          
+          <div class="error-actions">
+            <a href="./index.html" class="btn btn-primary">← Go Home</a>
+            <a href="./blog/index.html" class="btn btn-secondary">Browse Blog</a>
+          </div>
+
+          <div class="error-suggestions">
+            <h3>You might be looking for:</h3>
+            <ul>
+              <li><a href="./blog/index.html">📊 Latest LLM Comparisons</a></li>
+              <li><a href="./about.html">ℹ️ About comparellms</a></li>
+              <li><a href="./contact.html">✉️ Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section footer-brand">
+          <a href="./index.html" class="logo">
+            <div class="logo-icon">⚡</div>
+            <span class="logo-text">compare<strong>llms</strong></span>
+          </a>
+          <p>Your trusted source for daily LLM comparisons, benchmarks, and AI model insights.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog/index.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="./rss.xml">RSS Feed</a></li>
+            <li><a href="./sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="./ai-content-policy.html">AI Content Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 comparellms.in. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="./ai-content-policy.html">Privacy</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    navToggle?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      this.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

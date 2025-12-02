@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neno Banana vs. Pro: The Definitive Comparison</title>
+    
+    <!-- Required meta tags for post indexing -->
+    <meta name="post-slug" content="neno-banana-vs-neno-banana-pro">
+    <meta name="post-date" content="2025-12-02">
+    <meta name="post-title" content="Neno Banana vs. Pro: The Definitive Comparison">
+    <meta name="post-summary" content="A comprehensive comparison between Neno Banana and Neno Banana Pro - features, performance, and which one to choose.">
+    <meta name="post-thumb" content="/assets/img/thumbs/neno-banana-vs-neno-banana-pro.jpg">
+    <meta name="post-tags" content="Neno Banana, Comparison, AI Models">
+    <meta name="description" content="A comprehensive comparison between Neno Banana and Neno Banana Pro - features, performance, and which one to choose.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#2563EB',    /* Vibrant Blue */
+                            yellow: '#FACC15',  /* Banana Yellow */
+                            purple: '#7C3AED',  /* AI Deep Purple */
+                            green: '#10B981',   /* Success Green */
+                            dark: '#1E293B',    /* Slate 800 */
+                            light: '#F8FAFC',   /* Slate 50 */
+                            pink: '#EC4899'     /* Baby Pink */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Chart Container Rules */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Custom Scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2563EB;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1d4ed8;
+        }
+
+        /* Timeline Dots */
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #2563EB;
+            background-color: #2563EB;
+            position: absolute;
+            left: -11px;
+            top: 24px;
+            z-index: 10;
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #2563EB, #7C3AED);
+        }
+    </style>
+    <!-- Chosen Palette: Energetic & Playful (Blue, Yellow, Purple) -->
+    <!-- Plan: Compare AI Models (Part 1) then Pediatric Products (Part 2) then Convergence (Part 3) -->
+    <!-- NEITHER Mermaid JS NOR SVG were used anywhere in this output. -->
+</head>
+<body class="bg-brand-light text-brand-dark antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tight text-brand-blue">Banana<span class="text-brand-yellow">Vs</span>Pro</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#intro" class="text-gray-600 hover:text-brand-blue font-medium transition">The Confusion</a>
+                    <a href="#ai-domain" class="text-brand-purple hover:text-brand-blue font-medium transition">AI World</a>
+                    <a href="#baby-domain" class="text-brand-pink hover:text-brand-blue font-medium transition">Baby World</a>
+                    <a href="#convergence" class="text-gray-600 hover:text-brand-blue font-medium transition">Convergence</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="intro" class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">The Tale of Two</span>
+                            <span class="block text-gradient">Bananas</span>
+                        </h1>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Searching for "Neno Banana vs. Pro" leads to a massive cross-industry mix-up. Are you looking for the <strong>Gemini 3 AI Model</strong> or the <strong>Electronic Sonic Toothbrush</strong>? We clarify both.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#ai-domain" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-purple hover:bg-violet-700 md:py-4 md:text-lg">
+                                    I mean the AI &#129302;
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#baby-domain" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-brand-blue bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg">
+                                    I mean the Toothbrush &#128118;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-gray-50 flex items-center justify-center">
+            <div class="text-9xl opacity-20 select-none">
+                &#127820; vs &#129302;
+            </div>
+        </div>
+    </header>
+
+    <!-- Part 1: The AI Paradigm -->
+    <section id="ai-domain" class="py-16 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base font-semibold text-brand-purple tracking-wide uppercase">The Computational Realm</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Nano Banana vs. Nano Banana Pro
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    In the AI world, this is a battle between <strong>Speed</strong> (Gemini 2.5 Flash) and <strong>Reasoning</strong> (Gemini 3 Pro).
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-yellow">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Standard: The Meme Machine</h3>
+                        <p class="text-gray-600">
+                            Built on the <strong>Gemini 2.5 Flash</strong> architecture. Designed for latency minimization. Perfect for social media, rapid prototyping, and "fast, fun editing." It sacrifices semantic depth for raw speed.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-purple">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pro: The Thinking Engine</h3>
+                        <p class="text-gray-600">
+                            Built on <strong>Gemini 3 Pro</strong>. It uses a "chain-of-thought" process to reason about physics, lighting, and text <em>before</em> generating pixels. It supports 4K rendering and OCR-grade text.
+                        </p>
+                    </div>
+                    
+                    <!-- Plotly Latency Chart -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h4 class="text-lg font-semibold mb-4 text-center">Generation Latency Comparison</h4>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="aiLatencyChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-2 text-center">Pro takes longer to "think", but the output quality is vastly superior.</p>
+                    </div>
+                </div>
+
+                <!-- Radar Chart -->
+                <div class="bg-white rounded-lg shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">Capability Matrix</h3>
+                    <div class="chart-container">
+                        <canvas id="aiRadarChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">
+                        The <strong>Standard</strong> model (Yellow) spikes in Speed, while the <strong>Pro</strong> model (Purple) dominates in Reasoning, Text, and Resolution.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Features Grid -->
+             <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8">Why Go Pro? The Gemini 3 Advantage</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-4xl mb-4">&#128221;</div>
+                        <h4 class="font-bold text-lg mb-2">OCR-Grade Text</h4>
+                        <p class="text-gray-600 text-sm">Can render perfect text in over 100 languages. No more alien glyphs in your generated posters.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-4xl mb-4">&#129504;</div>
+                        <h4 class="font-bold text-lg mb-2">Spatial Logic</h4>
+                        <p class="text-gray-600 text-sm">Understands the "180-degree rule" in cinematography and maintains object permanence.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-4xl mb-4">&#128248;</div>
+                        <h4 class="font-bold text-lg mb-2">Physical Textures</h4>
+                        <p class="text-gray-600 text-sm">Proprietary upscaler reconstructs textures (skin pores, PVC shine) instead of just stretching pixels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 2: The Baby Paradigm -->
+    <section id="baby-domain" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base font-semibold text-brand-pink tracking-wide uppercase">The Pediatric Realm</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Baby Banana vs. Neno Denti (Pro)
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Here, "Pro" means electronic. Comparing the <strong>Industry Standard</strong> manual teether against the <strong>Tech Challenger</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Baby Banana Column -->
+                <div class="bg-brand-light p-8 rounded-2xl">
+                    <div class="text-center mb-6">
+                        <span class="text-6xl">&#127820;</span>
+                        <h3 class="text-2xl font-bold mt-4 text-brand-yellow drop-shadow-sm">Baby Banana</h3>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">The Standard</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Manual Safety:</strong> 100% Flexible Silicone. Won't impale the mouth if baby falls.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Peel Handles:</strong> Acts as a safety stop to prevent choking.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Mechanism:</strong> Relies on chewing. Essentially a teether.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Price:</strong> Affordable (~$8 - $10).</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Neno Denti Column -->
+                <div class="bg-brand-light p-8 rounded-2xl border-2 border-brand-blue">
+                    <div class="text-center mb-6">
+                        <span class="text-6xl">&#128039;</span>
+                        <h3 class="text-2xl font-bold mt-4 text-brand-blue">Neno Denti</h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">The Pro Choice</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Sonic Power:</strong> 17,000 vibrations/min disrupting plaque biofilm.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Diagnostic LED:</strong> Lights up the mouth to spot new teeth or thrush in the dark.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Modular:</strong> Includes 4 heads (Gum massage, brushing, tongue cleaning).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">&#10003;</span>
+                            <span><strong>Price:</strong> Premium (~$20+).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visualization Section -->
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Cleaning Power Chart -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-bold text-center mb-4">Cleaning Efficiency (Vibrations/Min)</h4>
+                    <div class="chart-container">
+                        <canvas id="babyVibrationChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2 text-center">Manual brushing (0 vibs) relies on friction. Sonic technology (17k) cleans on contact.</p>
+                </div>
+
+                <!-- Age Timeline -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-bold text-center mb-8">Developmental Timeline</h4>
+                    <div class="relative pl-8 border-l-4 border-gray-200 ml-4 space-y-10">
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <div class="timeline-dot"></div>
+                            <h5 class="text-md font-bold text-brand-yellow">3 - 9 Months</h5>
+                            <p class="text-sm text-gray-600 font-semibold">Baby Banana Reign</p>
+                            <p class="text-xs text-gray-500">Best for teething relief and grip training. Safety is priority #1.</p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <div class="timeline-dot bg-brand-blue" style="background-color: #2563EB; border-color: white;"></div>
+                            <h5 class="text-md font-bold text-brand-blue">6 - 12 Months</h5>
+                            <p class="text-sm text-gray-600 font-semibold">The Transition</p>
+                            <p class="text-xs text-gray-500">First teeth erupt. LED light becomes useful for inspection. Introduction of vibration.</p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="relative">
+                            <div class="timeline-dot bg-brand-blue" style="background-color: #2563EB; border-color: white;"></div>
+                            <h5 class="text-md font-bold text-brand-blue">12 - 36 Months</h5>
+                            <p class="text-sm text-gray-600 font-semibold">Neno Denti Dominance</p>
+                            <p class="text-xs text-gray-500">Hygiene is critical. Manual chewing is no longer enough. Sonic cleaning required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 3: Convergence -->
+    <section id="convergence" class="py-16 bg-brand-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white">The Convergence</h2>
+                <p class="mt-4 text-xl text-gray-300">
+                    Where the digital "Pro" visualizes the physical "Standard".
+                </p>
+            </div>
+            
+            <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+                <p class="text-center text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Users are now using the <strong>Nano Banana Pro (AI)</strong> to generate photorealistic marketing assets for products that look like the <strong>Neno/Baby Banana</strong>. The AI's "Pro" capabilities allow it to render the specific translucency of silicone and PVC plastics.
+                </p>
+
+                <!-- Process Flow using Flex/Grid (No Mermaid/SVG) -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-center">
+                    
+                    <!-- Step 1 -->
+                    <div class="bg-gray-700 p-6 rounded-lg w-full md:w-1/4 border border-gray-600 hover:border-brand-purple transition-colors">
+                        <div class="text-3xl mb-2">&#128104;&#8205;&#128187;</div>
+                        <h4 class="font-bold text-brand-yellow">User Prompt</h4>
+                        <p class="text-xs text-gray-400 mt-2">"Create a 1/7 scale figurine of Neno Banana, PVC material..."</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="text-gray-400 text-2xl font-bold transform rotate-90 md:rotate-0">&#10140;</div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-gray-700 p-6 rounded-lg w-full md:w-1/4 border border-brand-purple shadow-[0_0_15px_rgba(124,58,237,0.3)]">
+                        <div class="text-3xl mb-2">&#129504;</div>
+                        <h4 class="font-bold text-brand-purple">Gemini 3 Reasoning</h4>
+                        <p class="text-xs text-gray-400 mt-2">Analyzes physics of plastic, light refraction, and 14 reference images.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="text-gray-400 text-2xl font-bold transform rotate-90 md:rotate-0">&#10140;</div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-gray-700 p-6 rounded-lg w-full md:w-1/4 border border-gray-600 hover:border-brand-green transition-colors">
+                        <div class="text-3xl mb-2">&#127912;</div>
+                        <h4 class="font-bold text-brand-green">4K Output</h4>
+                        <p class="text-xs text-gray-400 mt-2">Perfectly textured, OCR-correct packaging render.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Verdict -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Final Verdict: Which "Pro" Do You Need?</h2>
+            
+            <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-300">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">If you are...</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">You need...</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Because...</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Meme Maker / Social Media Manager</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm text-brand-yellow font-bold">Nano Banana (Standard)</td>
+                            <td class="px-3 py-4 text-sm text-gray-500">You need speed (0.5s latency) and don't care about perfect text.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Graphic Designer / Enterprise</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm text-brand-purple font-bold">Nano Banana Pro</td>
+                            <td class="px-3 py-4 text-sm text-gray-500">You need reasoning, 4K resolution, and legible text layout.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Parent of Infant (3-9mo)</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm text-brand-yellow font-bold">Baby Banana (Standard)</td>
+                            <td class="px-3 py-4 text-sm text-gray-500">Safety first. It's a bendable teether that introduces brushing.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Parent of Toddler (6-36mo)</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm text-brand-blue font-bold">Neno Denti (Pro)</td>
+                            <td class="px-3 py-4 text-sm text-gray-500">Hygiene first. Sonic vibration & LED lights clean actual teeth.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-gray-400 text-sm mt-8">&copy; 2025 Infographic Generated based on "Neno Banana vs. Pro Comparison"</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- 1. Label Wrapping Helper ---
+        // Splits long strings into arrays of strings for Chart.js
+        function splitLabel(label, maxChar) {
+            if (label.length <= maxChar) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= maxChar) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        // --- 2. Tooltip Config ---
+        // Ensures multi-line labels in tooltips are readable
+        const commonTooltipOptions = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- 3. Chart Initializations ---
+
+        // Chart A: AI Latency (Bar Chart)
+        const ctxAiLatency = document.getElementById('aiLatencyChart').getContext('2d');
+        new Chart(ctxAiLatency, {
+            type: 'bar',
+            data: {
+                labels: ['Nano Banana (Flash)', 'Nano Banana Pro (Gemini 3)'].map(l => splitLabel(l, 16)),
+                datasets: [{
+                    label: 'Generation Time (Seconds)',
+                    data: [0.5, 4.2],
+                    backgroundColor: ['#FACC15', '#7C3AED'],
+                    borderRadius: 8,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipOptions
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Seconds (Lower is Faster)' }
+                    }
+                }
+            }
+        });
+
+        // Chart B: AI Radar Chart (Capabilities)
+        const ctxAiRadar = document.getElementById('aiRadarChart').getContext('2d');
+        new Chart(ctxAiRadar, {
+            type: 'radar',
+            data: {
+                labels: ['Generation Speed', 'Text Quality', 'Reasoning Logic', 'Image Resolution', 'Texture Fidelity'],
+                datasets: [
+                    {
+                        label: 'Standard (Flash)',
+                        data: [95, 30, 20, 50, 40],
+                        fill: true,
+                        backgroundColor: 'rgba(250, 204, 21, 0.2)', // Yellow transparent
+                        borderColor: '#FACC15',
+                        pointBackgroundColor: '#FACC15',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#FACC15'
+                    },
+                    {
+                        label: 'Pro (Gemini 3)',
+                        data: [40, 95, 100, 95, 90],
+                        fill: true,
+                        backgroundColor: 'rgba(124, 58, 237, 0.2)', // Purple transparent
+                        borderColor: '#7C3AED',
+                        pointBackgroundColor: '#7C3AED',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#7C3AED'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                elements: {
+                    line: { borderWidth: 3 }
+                },
+                plugins: {
+                    tooltip: commonTooltipOptions
+                },
+                scales: {
+                    r: {
+                        angleLines: { display: true },
+                        suggestedMin: 0,
+                        suggestedMax: 100,
+                        pointLabels: {
+                            font: { size: 12, family: "'Poppins', sans-serif" }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart C: Baby Toothbrush Vibration (Bar Chart)
+        const ctxBabyVib = document.getElementById('babyVibrationChart').getContext('2d');
+        new Chart(ctxBabyVib, {
+            type: 'bar',
+            data: {
+                labels: ['Baby Banana (Manual)', 'Neno Denti (Sonic)'].map(l => splitLabel(l, 16)),
+                datasets: [{
+                    label: 'Vibrations per Minute',
+                    data: [0, 17000],
+                    backgroundColor: ['#FACC15', '#2563EB'], // Yellow vs Blue
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: commonTooltipOptions
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Vibrations per Minute' }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

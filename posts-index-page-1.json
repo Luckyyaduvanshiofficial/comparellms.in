@@ -1,0 +1,22 @@
+{
+  "page": 1,
+  "per_page": 20,
+  "total_posts": 1,
+  "total_pages": 1,
+  "posts": [
+    {
+      "slug": "neno-banana-vs-neno-banana-pro",
+      "url": "/posts/neno-banana-vs-neno-banana-pro/",
+      "title": "Neno Banana vs. Pro: The Definitive Comparison",
+      "date": "2025-12-02",
+      "updated": "",
+      "summary": "A comprehensive comparison between Neno Banana and Neno Banana Pro - features, performance, and which one to choose.",
+      "thumb": "/assets/img/thumbs/neno-banana-vs-neno-banana-pro.jpg",
+      "tags": [
+        "Neno Banana",
+        "Comparison",
+        "AI Models"
+      ]
+    }
+  ]
+}

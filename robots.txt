@@ -1,0 +1,12 @@
+# robots.txt for comparellms.in
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://comparellms.in/sitemap.xml
+
+# Disallow admin/private paths (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
