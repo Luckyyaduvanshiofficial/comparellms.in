@@ -2681,3 +2681,228 @@ a {
     display: none;
   }
 }
+
+/* ==========================================================================
+   Legal Pages & Partner Links
+   ========================================================================== */
+
+/* Partner Link in Footer */
+.partner-link {
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.partner-link a {
+  color: var(--color-primary-light);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.partner-link a:hover {
+  color: var(--color-primary);
+}
+
+/* Partner Callout on Homepage */
+.partner-callout {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  backdrop-filter: var(--glass-blur);
+}
+
+.partner-callout p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+
+.partner-callout a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.partner-callout a:hover {
+  color: var(--color-primary-light);
+}
+
+/* Legal Content Styling */
+.legal-content {
+  max-width: 800px;
+}
+
+.legal-content h2 {
+  margin-top: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+}
+
+.legal-content h2:first-of-type {
+  margin-top: var(--spacing-lg);
+  padding-top: 0;
+  border-top: none;
+}
+
+.legal-content h3 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+}
+
+.legal-content p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.legal-content ul,
+.legal-content ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-xl);
+}
+
+.legal-content li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.legal-content a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.legal-content a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+/* Related Sites Section */
+.related-sites {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  background: var(--gradient-hero);
+  border-radius: var(--radius-lg);
+  color: white;
+}
+
+.related-sites h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  color: white;
+  font-size: var(--font-size-lg);
+}
+
+.related-sites p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.related-sites ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.related-sites li {
+  color: white;
+}
+
+.related-sites a {
+  color: var(--color-secondary-light);
+}
+
+.related-sites a:hover {
+  color: white;
+}
+
+/* Contact Page Improvements */
+.contact-topics ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-topics li {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.contact-topics li:last-child {
+  border-bottom: none;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.contact-method {
+  padding: var(--spacing-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.contact-method:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-method-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-method h3 {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+.contact-method p {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.contact-method a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+.contact-method a:hover {
+  color: var(--color-primary-light);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for contact methods */
+@media (max-width: 768px) {
+  .contact-methods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+  
+  .partner-callout {
+    padding: var(--spacing-md);
+  }
+}
